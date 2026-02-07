@@ -1,0 +1,366 @@
+/* css/antiguo.css - Estilos específicos para tema antiguo */
+
+/* Efecto de papel antiguo */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        linear-gradient(90deg, 
+            rgba(197, 184, 156, 0.05) 1px, 
+            transparent 1px),
+        linear-gradient(rgba(197, 184, 156, 0.05) 1px, 
+            transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Marco antiguo para citas */
+.marco-antiguo {
+    position: relative;
+    padding: 40px;
+    background: var(--color-papil);
+    border: 15px solid transparent;
+    border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="%23c9a344" stroke-width="2" stroke-dasharray="10,5"/></svg>') 30 stretch;
+    box-shadow: 
+        inset 0 0 20px rgba(201, 163, 68, 0.1),
+        0 10px 30px rgba(58, 44, 26, 0.2);
+}
+
+.marco-antiguo::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid rgba(201, 163, 68, 0.3);
+    pointer-events: none;
+}
+
+.texto-marco {
+    text-align: center;
+}
+
+.cita-biblia {
+    font-size: 1.8rem;
+    font-style: italic;
+    color: var(--color-marron-oscuro);
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.referencia {
+    font-size: 1.1rem;
+    color: var(--color-oro);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Cita antigua con decoración */
+.cita-antigua {
+    position: relative;
+    padding: 30px 40px;
+    margin: 30px 0;
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: var(--color-marron-oscuro);
+    background: linear-gradient(to right, transparent 0%, rgba(201, 163, 68, 0.1) 50%, transparent 100%);
+    border-left: 3px solid var(--color-oro);
+}
+
+.cita-antigua::before,
+.cita-antigua::after {
+    content: '"';
+    font-size: 3rem;
+    color: var(--color-oro);
+    opacity: 0.3;
+    position: absolute;
+}
+
+.cita-antigua::before {
+    top: 10px;
+    left: 10px;
+}
+
+.cita-antigua::after {
+    bottom: 10px;
+    right: 10px;
+}
+
+.cita-antigua cite {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-size: 1rem;
+    color: var(--color-marron-medio);
+    text-align: right;
+}
+
+/* Decoración para secciones históricas */
+.decoracion-antigua {
+    width: 100%;
+    height: 300px;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(201, 163, 68, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(139, 0, 0, 0.1) 0%, transparent 50%);
+    border: 2px dashed rgba(201, 163, 68, 0.3);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.decoracion-antigua::before {
+    content: '1562';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: 8rem;
+    font-weight: 900;
+    color: rgba(201, 163, 68, 0.1);
+    font-family: var(--fuente-titulos);
+}
+
+/* Efecto de tinta desvanecida para textos */
+.texto-desvanecido {
+    background: linear-gradient(
+        to right,
+        var(--color-tinta) 0%,
+        var(--color-marron-medio) 50%,
+        var(--color-tinta) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Números de capítulos con estilo antiguo */
+.numero-capitulo {
+    display: inline-block;
+    padding: 5px 15px;
+    background: var(--color-oro);
+    color: var(--color-marron-oscuro);
+    font-family: var(--fuente-titulos);
+    font-weight: 900;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    min-width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Versículos con estilo de manuscrito */
+.versiculo-manuscrito {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.versiculo-manuscrito::before {
+    content: attr(data-numero);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-oro);
+    background: rgba(201, 163, 68, 0.1);
+    padding: 2px 8px;
+    border-radius: 3px;
+    min-width: 30px;
+    text-align: center;
+}
+
+/* Encabezados de libros con estilo antiguo */
+.encabezado-libro {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 40px 0;
+    background: linear-gradient(135deg, var(--color-papil) 0%, #e8dfd0 100%);
+    border-top: 3px solid var(--color-oro);
+    border-bottom: 3px solid var(--color-oro);
+    position: relative;
+}
+
+.encabezado-libro::before,
+.encabezado-libro::after {
+    content: '✝';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: var(--color-oro);
+    opacity: 0.5;
+}
+
+.encabezado-libro::before {
+    left: 20px;
+}
+
+.encabezado-libro::after {
+    right: 20px;
+}
+
+.titulo-libro {
+    font-size: 3.5rem;
+    color: var(--color-rojo-biblia);
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitulo-libro {
+    font-size: 1.2rem;
+    color: var(--color-marron-medio);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* Botones con estilo antiguo */
+.btn-antiguo {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color-marron-oscuro);
+    background: linear-gradient(to bottom, var(--color-papil) 0%, #e0d6c2 100%);
+    color: var(--color-marron-oscuro);
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.btn-antiguo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-antiguo:hover::before {
+    left: 100%;
+}
+
+/* Lista con viñetas antiguas */
+.lista-antigua {
+    list-style: none;
+    padding-left: 0;
+}
+
+.lista-antigua li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.lista-antigua li::before {
+    content: '❖';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--color-oro);
+    font-size: 1.2rem;
+}
+
+/* Tabla de contenidos antigua */
+.tabla-contenidos {
+    border: 2px solid var(--color-marron-claro);
+    border-collapse: collapse;
+    width: 100%;
+    background: var(--color-papil);
+}
+
+.tabla-contenidos th {
+    background: var(--color-marron-oscuro);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-family: var(--fuente-titulos);
+}
+
+.tabla-contenidos td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--color-marron-claro);
+}
+
+.tabla-contenidos tr:hover {
+    background: rgba(201, 163, 68, 0.1);
+}
+
+/* Notas al pie estilo antiguo */
+.nota-pie {
+    font-size: 0.9rem;
+    color: var(--color-marron-medio);
+    border-top: 1px dashed var(--color-marron-claro);
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.nota-pie::before {
+    content: '※ ';
+    color: var(--color-oro);
+}
+
+/* Animación de aparición para elementos antiguos */
+@keyframes aparecerAntiguo {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.elemento-antiguo {
+    animation: aparecerAntiguo 0.8s ease-out;
+}
+
+/* Efecto de pergamino para texto largo */
+.pergamino {
+    background: linear-gradient(
+        to bottom,
+        var(--color-papil) 0%,
+        #f0e9d8 5%,
+        var(--color-papil) 95%,
+        #e0d6c2 100%
+    );
+    padding: 40px;
+    border: 1px solid var(--color-marron-claro);
+    box-shadow: 
+        inset 0 0 50px rgba(201, 163, 68, 0.1),
+        0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.pergamino::before,
+.pergamino::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: linear-gradient(90deg, transparent 0%, var(--color-oro) 50%, transparent 100%);
+    opacity: 0.2;
+}
+
+.pergamino::before {
+    top: 0;
+}
+
+.pergamino::after {
+    bottom: 0;
+}
