@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santa Biblia - Reina Valera 1562-1606 | Casiodoro de Reina</title>
+    <meta name="description" content="Biblia Reina Valera versión 1562-1606 completa - Traducción original de Casiodoro de Reina y revisión de Cipriano de Valera">
+    <meta name="keywords" content="Biblia, Reina Valera, 1562, 1606, Casiodoro de Reina, Biblia Antigua, Español Antiguo, Biblia del Oso">
+    <meta name="author" content="Casiodoro de Reina">
+    
+    <!-- Preconexión para fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fuentes antiguas -->
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel:wght@400;700&family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Icono -->
+    <link rel="icon" type="image/svg+xml" href="imagenes/cruz-icono.svg">
+    <link rel="apple-touch-icon" href="imagenes/icono-apple.png">
+    
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/antiguo.css">
+    
+    <!-- Scripts diferidos -->
+    <script src="js/main.js" defer></script>
+    <script src="js/navegacion.js" defer></script>
+</head>
+<body>
+    <!-- Barra de navegación superior -->
+    <nav class="barra-superior">
+        <div class="contenedor-nav">
+            <!-- Logo y título -->
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-icono">✝</div>
+                    <div class="logo-texto">
+                        <span class="logo-titulo">Santa Biblia</span>
+                        <span class="logo-subtitulo">RV 1562-1606</span>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Navegación principal -->
+            <div class="navegacion">
+                <ul class="menu-principal">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li class="menu-desplegable">
+                        <a href="#libros">Libros ▾</a>
+                        <ul class="submenu">
+                            <li><a href="#antiguo-testamento">Antiguo Testamento</a></li>
+                            <li><a href="#nuevo-testamento">Nuevo Testamento</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#historia">Historia</a></li>
+                    <li><a href="#descargas">Descargas</a></li>
+                    <li><a href="#acerca">Acerca</a></li>
+                </ul>
+            </div>
+            
+            <!-- Búsqueda -->
+            <div class="busqueda">
+                <input type="search" id="buscar-verso" placeholder="Buscar versículo...">
+                <button type="button" id="btn-buscar">🔍</button>
+            </div>
+            
+            <!-- Menú móvil -->
+            <button class="btn-menu-movil" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Banner Hero -->
+    <header class="banner-hero" id="inicio">
+        <div class="contenedor-hero">
+            <div class="texto-hero">
+                <h1 class="titulo-hero">
+                    <span class="linea-1">Santa Biblia</span>
+                    <span class="linea-2">Reina Valera</span>
+                    <span class="linea-3">1562-1606</span>
+                </h1>
+                <p class="subtitulo-hero">
+                    La traducción original de Casiodoro de Reina (1569) <br>
+                    y revisión de Cipriano de Valera (1602)
+                </p>
+                <div class="botones-hero">
+                    <a href="#antiguo-testamento" class="btn btn-primary">
+                        <span class="btn-icono">📖</span>
+                        <span class="btn-texto">Leer la Biblia</span>
+                    </a>
+                    <a href="#descargas" class="btn btn-secondary">
+                        <span class="btn-icono">⬇️</span>
+                        <span class="btn-texto">Descargar PDF</span>
+                    </a>
+                </div>
+            </div>
+            <div class="imagen-hero">
+                <div class="marco-antiguo">
+                    <div class="texto-marco">
+                        <p class="cita-biblia">"Porque de tal manera amó Dios al mundo..."</p>
+                        <p class="referencia">Juan 3:16</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="contenedor-principal">
+        <!-- Sección: Testimonios históricos -->
+        <section class="seccion-historia" id="historia">
+            <h2 class="titulo-seccion">La Biblia del Oso</h2>
+            <div class="contenido-historia">
+                <div class="historia-texto">
+                    <p>
+                        La <strong>Biblia del Oso</strong> (Basilea, 1569) es la primera traducción completa 
+                        de la Biblia al castellano, realizada por <strong>Casiodoro de Reina</strong>. 
+                        Posteriormente, <strong>Cipriano de Valera</strong> realizó una revisión en 1602, 
+                        dando origen a la versión conocida como <strong>Reina-Valera</strong>.
+                    </p>
+                    <p>
+                        Esta edición digital preserva fielmente el texto de las versiones 
+                        1562 y 1606, manteniendo la ortografía, vocabulario y estilo 
+                        original del español del Siglo de Oro.
+                    </p>
+                    <blockquote class="cita-antigua">
+                        "Y será predicado este evangelio del reino en todo el mundo, 
+                        para testimonio á todas las gentes; y entonces vendrá el fin."
+                        <cite>Mateo 24:14 (1602)</cite>
+                    </blockquote>
+                </div>
+                <div class="historia-imagen">
+                    <div class="imagen-antigua">
+                        <div class="decoracion-antigua"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Lista de libros del Antiguo Testamento -->
+        <section class="seccion-libros" id="antiguo-testamento">
+            <h2 class="titulo-seccion">Antiguo Testamento</h2>
+            <div class="categorias-libros">
+                
+                <!-- Pentateuco -->
+                <div class="categoria">
+                    <h3 class="titulo-categoria">Pentateuco</h3>
+                    <div class="lista-libros">
+                        <a href="libros/genesis/capitulo-1.html" class="libro-item">
+                            <span class="numero-libro">01</span>
+                            <span class="nombre-libro">Génesis</span>
+                            <span class="capitulos">50 capítulos</span>
+                        </a>
+                        <a href="libros/exodo/capitulo-1.html" class="libro-item">
+                            <span class="numero-libro">02</span>
+                            <span class="nombre-libro">Éxodo</span>
+                            <span class="capitulos">40 capítulos</span>
+                        </a>
+                        <a href="libros/levitico/capitulo-1.html" class="libro-item">
+                            <span class="numero-libro">03</span>
+                            <span class="nombre-libro">Levítico</span>
+                            <span class="capitulos">27 capítulos</span>
+                        </a>
+                        <a href="libros/numeros/capitulo-1.html" class="libro-item">
+                            <span class="numero-libro">04</span>
+                            <span class="nombre-libro">Números</span>
+                            <span class="capitulos">36 capítulos</span>
+                        </a>
+                        <a href="libros/deuteronomio/capitulo-1.html" class="libro-item">
+                            <span class="numero-libro">05</span>
+                            <span class="nombre-libro">Deuteronomio</span>
+                            <span class="capitulos">34 capítulos</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Libros Históricos -->
+                <div class="categoria">
+                    <h3 class="titulo-categoria">Libros Históricos</h3>
+                    <div class="lista-libros">
+                        <a href="libros/josue/capitulo-1.html" class="libro-item">
+                            <span class="numero-libro">06</span>
+                            <span class="nombre-libro">Josué</span>
+                            <span class="capitulos">24 capítulos</span>
+                        </a>
+                        <a href="libros/jueces/capitulo-1.html" class="libro-item">
+                            <span class="numero-libro">07</span>
+                            <span class="nombre-libro">Jueces</span>
+                            <span class="capitulos">21 capítulos</span>
+                        </a>
+                        <a href="libros/rut/capitulo-1.html" class="libro-item">
+                            <span class="numero-libro">08</span>
+                            <span class="nombre-libro">Rut</span>
+                            <span class="capitulos">4 capítulos</span>
+                        </a>
+                        <!-- Continúa con los demás libros históricos -->
+                    </div>
+                </div>
+
+                <!-- Libros Poéticos -->
+                <div class="categoria">
+                    <h3 class="titulo-categoria">Libros Poéticos</h3>
+                    <div class="lista-libros">
+                        <a href="libros/salmos/capitulo-1.html" class="libro-item">
+                            <span class="numero-libro">19</span>
+                            <span class="nombre-libro">Salmos</span>
+                            <span class="capitulos">150 capítulos</span>
+                        </a>
+                        <!-- Continúa con los demás libros poéticos -->
+                    </div>
+                </div>
+
+                <!-- Profetas -->
+                <div class="categoria">
+                    <h3 class="titulo-categoria">Profetas</h3>
+                    <div class="lista-libros">
+                        <!-- Profetas mayores y menores -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sección: Nuevo Testamento -->
+        <section class="seccion-libros" id="nuevo-testamento">
+            <h2 class="titulo-seccion">Nuevo Testamento</h2>
+            <div class="categorias-libros">
+                
+                <!-- Evangelios -->
+                <div class="categoria">
+                    <h3 class="titulo-categoria">Evangelios</h3>
+                    <div class="lista-libros">
+                        <a href="libros/mateo/capitulo-1.html" class="libro-item">
+                            <span class="numero-libro">40</span>
+                            <span class="nombre-libro">Mateo</span>
+                            <span class="capitulos">28 capítulos</span>
+                        </a>
+                        <a href="libros/marcos/capitulo-1.html" class="libro-item">
+                            <span class="numero-libro">41</span>
+                            <span class="nombre-libro">Marcos</span>
+                            <span class="capitulos">16 capítulos</span>
+                        </a>
+                        <!-- Continúa con Lucas y Juan -->
+                    </div>
+                </div>
+
+                <!-- Cartas Paulinas y Generales -->
+                <div class="categoria">
+                    <h3 class="titulo-categoria">Cartas</h3>
+                    <div class="lista-libros">
+                        <!-- Lista de cartas -->
+                    </div>
+                </div>
+
+                <!-- Profecía -->
+                <div class="categoria">
+                    <h3 class="titulo-categoria">Profecía</h3>
+                    <div class="lista-libros">
+                        <a href="libros/apocalipsis/capitulo-1.html" class="libro-item">
+                            <span class="numero-libro">66</span>
+                            <span class="nombre-libro">Apocalipsis</span>
+                            <span class="capitulos">22 capítulos</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sección: Descargas -->
+        <section class="seccion-descargas" id="descargas">
+            <h2 class="titulo-seccion">Descargas</h2>
+            <div class="opciones-descarga">
+                <div class="tarjeta-descarga">
+                    <div class="icono-descarga">📄</div>
+                    <h3>PDF Gratuito</h3>
+                    <p>Versión completa en PDF para leer offline</p>
+                    <a href="descargas/biblia-rv-1562-completa.pdf" class="btn-descarga" download>
+                        Descargar PDF (15 MB)
+                    </a>
+                </div>
+                
+                <div class="tarjeta-descarga destacada">
+                    <div class="icono-descarga">📚</div>
+                    <h3>Edición Premium</h3>
+                    <p>PDF + EPUB + Audio + Notas de estudio</p>
+                    <a href="https://hotmart.com/producto" class="btn-descarga premium" target="_blank">
+                        Obtener Premium
+                    </a>
+                    <small class="nota-hotmart">Disponible en Hotmart</small>
+                </div>
+                
+                <div class="tarjeta-descarga">
+                    <div class="icono-descarga">📱</div>
+                    <h3>Aplicación Móvil</h3>
+                    <p>Biblia completa para Android e iOS</p>
+                    <a href="#" class="btn-descarga proximamente">
+                        Próximamente
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Versículo del día -->
+        <section class="seccion-verso-dia">
+            <div class="contenedor-verso">
+                <h3>Versículo del Día</h3>
+                <div class="verso-contenido">
+                    <p class="texto-verso">"En el principio crió Dios los cielos y la tierra."</p>
+                    <p class="referencia-verso">Génesis 1:1</p>
+                    <button class="btn-compartir" data-verso="Génesis 1:1">Compartir</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina" id="acerca">
+        <div class="contenedor-footer">
+            <div class="info-footer">
+                <div class="columna-footer">
+                    <h4>Santa Biblia</h4>
+                    <p>Reina Valera 1562-1606</p>
+                    <p>Versión digital de la traducción de Casiodoro de Reina</p>
+                </div>
+                
+                <div class="columna-footer">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="enlaces-footer">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#antiguo-testamento">Antiguo Testamento</a></li>
+                        <li><a href="#nuevo-testamento">Nuevo Testamento</a></li>
+                        <li><a href="#descargas">Descargas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="columna-footer">
+                    <h4>Recursos</h4>
+                    <ul class="enlaces-footer">
+                        <li><a href="recursos/concordancia.html">Concordancia</a></li>
+                        <li><a href="recursos/diccionario.html">Diccionario Bíblico</a></li>
+                        <li><a href="recursos/mapas.html">Mapas Bíblicos</a></li>
+                        <li><a href="recursos/cronologia.html">Cronología</a></li>
+                    </ul>
+                </div>
+                
+                <div class="columna-footer">
+                    <h4>Contacto</h4>
+                    <p>Para preguntas o sugerencias:</p>
+                    <p>contacto@reinavalera1562.org</p>
+                    <div class="redes-sociales">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="derechos-footer">
+                <p>&copy; 2025 IN GOD WE TRUST. Todos los derechos reservados.</p>
+                <p>
+                    El texto bíblico es de dominio público. 
+                    Esta edición digital es una transcripción fiel de las versiones históricas.
+                </p>
+                <p class="version-sitio">Versión 1.0.0</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón para volver arriba -->
+    <button class="btn-arriba" aria-label="Volver arriba">↑</button>
+
+</body>
+</html>
